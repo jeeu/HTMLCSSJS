@@ -16,6 +16,6 @@
 var tplContent = document.querySelector('#template').textContent;
 var tpl = _.template(tplContent);
 var tplTarget = document.querySelector('#templateTarget');
-tplTarget.innerHTML = tpl({name:'안기영'});
+tplTarget.innerHTML = tpl({name:'김멸치'});
 </script>
 </body>
