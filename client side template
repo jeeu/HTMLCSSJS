@@ -1,0 +1,21 @@
+<html>
+<head>
+ <meta charset='UTF-8'>
+</head>
+<body>
+<script id='template' style='text/template'>
+ <h1>
+  안녕하세요 제 이름은 <%=name%>입니다.
+ </h1>
+</script>
+
+<div id='templateTarget'></div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js' />
+<script>
+var tplContent = document.querySelector('#template').textContent;
+var tpl = _.template(tplContent);
+var tplTarget = document.querySelector('#templateTarget');
+tplTarget.innerHTML = tpl({name:'안기영'});
+</script>
+</body>
